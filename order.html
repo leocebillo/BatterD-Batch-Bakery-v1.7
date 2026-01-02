@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop | Batter'd Batch Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<!-- NAVBAR -->
+
+<header>
+  <nav class="nav">
+    <div class="logo">
+  <img src="images/bb.png" alt="Batter'd Batch logo">
+  <span>Batter'd Batch Bakery</span>
+</div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- SHOP SECTION -->
+<section class="shop-wrapper">
+
+  <!-- PRODUCTS -->
+  <div class="products">
+    <h1>Shop 🍰</h1>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/cupcakes.jpg" alt="Cupcakes">
+        <h3>Chocolate Cupcakes (6)</h3>
+        <p>Template</p>
+        <span>$18</span>
+        <button onclick="addToCart('Chocolate Cupcakes (6)', 18)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/cupcakes.jpg" alt="Cupcakes">
+        <h3>Cookies n' Creme Cupcakes (6)</h3>
+        <p>Soft, fluffy cupcakes topped with buttercream.</p>
+        <span>$18</span>
+        <button onclick="addToCart('Cookies n\' Creme Cupcakes (6)', 18)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/cake.jpg" alt="Custom Cake">
+        <h3>Custom Order</h3>
+        <p>Made-to-order cake for any occasion.</p>
+        <span>$45</span>
+        <button onclick="addToCart('Custom Order', 45)">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CART -->
+  <aside class="cart">
+    <h2>Your Order</h2>
+    <ul id="cart-items"></ul>
+    <p class="total">Total: $<span id="cart-total">0</span></p>
+    <button onclick="clearCart()">Clear Cart</button>
+    <button onclick="checkout()">Checkout</button>
+    <p class="note">Final orders confirmed via email or DM.</p>
+  </aside>
+
+</section>
+
+<!-- FOOTER (MOVED OUTSIDE SHOP SECTION) -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-columns">
+
+      <div class="footer-col">
+        <span class="footer-label">Website</span>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-label">Social Media</span>
+        <a href="https://instagram.com/batterdbatchbakery" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@batterdbatchbakery" target="_blank">TikTok</a>
+      </div>
+
+    </div>
+
+    <p class="footer-copy">
+      © 2026 Batter'd Batch Bakery · Made fresh at home
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
